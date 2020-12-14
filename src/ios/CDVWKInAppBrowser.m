@@ -34,8 +34,8 @@
 
 #define    IAB_BRIDGE_NAME @"cordova_iab"
 
-#define    TOOLBAR_HEIGHT 44.0
-#define    LOCATIONBAR_HEIGHT 21.0
+#define    TOOLBAR_HEIGHT 0.0
+#define    LOCATIONBAR_HEIGHT 0.0
 #define    FOOTER_HEIGHT ((TOOLBAR_HEIGHT) + (LOCATIONBAR_HEIGHT))
 
 #pragma mark CDVWKInAppBrowser
