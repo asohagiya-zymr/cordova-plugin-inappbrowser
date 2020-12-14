@@ -1062,6 +1062,14 @@ BOOL isExiting = FALSE;
     }
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     NSString* statusBarStylePreference = [self settingForKey:@"InAppBrowserStatusBarStyle"];
@@ -1132,7 +1140,6 @@ BOOL isExiting = FALSE;
         return (float) [UIApplication sharedApplication].delegate.window.safeAreaInsets.top;
         // or your code and you could use your keyWindow rather than delegate.window
     }
-
     return 20.0;
 }
 
