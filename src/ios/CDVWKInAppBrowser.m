@@ -1145,7 +1145,7 @@ BOOL isExiting = FALSE;
 
 - (void) rePositionViews {
     CGRect viewBounds = [self.webView bounds];
-    CGFloat statusBarHeight = [self getStatusBarOffset];
+    CGFloat statusBarHeight = 0.0;
     
     // orientation portrait or portraitUpsideDown: status bar is on the top and web view is to be aligned to the bottom of the status bar
     // orientation landscapeLeft or landscapeRight: status bar height is 0 in but lets account for it in case things ever change in the future
