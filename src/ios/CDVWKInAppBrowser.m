@@ -1062,22 +1062,9 @@ BOOL isExiting = FALSE;
     }
 }
 
-- (BOOL)prefersStatusBarHidden {
-    return NO;
-}
-
--(UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
-
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
-    NSString* statusBarStylePreference = [self settingForKey:@"InAppBrowserStatusBarStyle"];
-    if (statusBarStylePreference && [statusBarStylePreference isEqualToString:@"lightcontent"]) {
-        return UIStatusBarStyleLightContent;
-    } else {
-        return UIStatusBarStyleDefault;
-    }
+    return UIStatusBarStyleLightContent;   
 }
 
 - (BOOL)prefersStatusBarHidden {
